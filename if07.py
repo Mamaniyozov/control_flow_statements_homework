@@ -1,3 +1,6 @@
+from cgi import print_arguments
+
+
 def main(a):
     """
     Given an integer a, check the following conditions:
@@ -12,4 +15,14 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a%2==0:
+        return "a juft son"
+    if a%2==1:
+        return "a toq son"
+    if a>0:
+        return "a musbat son"
+    if a<0:
+        return 'a manfiy son'
+    if a==0:
+        return "a nol"
+print(main(0))
