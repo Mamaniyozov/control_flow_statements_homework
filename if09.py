@@ -1,3 +1,6 @@
+from traceback import print_tb
+
+
 def main(a):
     """
     The two-digit integer is given.
@@ -9,4 +12,12 @@ def main(a):
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False.
     """
-    return
+    x1=a%10
+    x2=a//10
+     
+    x3=x1*10+x2 
+    if a>x3:
+        return True
+    else :
+        return False
+print(main(43))
